@@ -2,15 +2,18 @@
 event_inherited();
 
 state = "idle";
-version = "gby";
+version = "nes";
 
 move_spd = 0;
 move_spd_max = 2;
 acc = .3;
 dcc = .3;
 
+coyote_time_max = 10;
+coyote_time = 0;
+
 switch(version){
-	case "atari":
+	case "atr":
 		move_spd_max = 1;
 		hspd = 0;
 		vspd = 0;
@@ -18,7 +21,7 @@ switch(version){
 		
 		vspd_max = 4;
 		vspd_min = -4;
-		jump_height = -3;
+		jump_height = -4;
 	break;
 	
 	case "nes":

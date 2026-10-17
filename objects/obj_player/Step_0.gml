@@ -6,7 +6,7 @@ var _ground	= place_meeting(x,y+1,obj_collision);
 
 switch(version){
 	
-	case "atari":
+	case "atr":
 		src_player_atr();
 	break;
 	

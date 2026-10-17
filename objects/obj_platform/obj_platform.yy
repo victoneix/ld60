@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_platform",
-    "path":"sprites/spr_platform/spr_platform.yy",
+    "name":"spr_platform_breakable",
+    "path":"sprites/spr_platform_breakable/spr_platform_breakable.yy",
   },
   "spriteMaskId":null,
   "visible":true,
