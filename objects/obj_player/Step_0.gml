@@ -9,15 +9,15 @@ switch(state){
 		if(place_meeting(x+sign(hspd),y,obj_collision)){
 			move_dir *= -1; 
 		}
-		halte = halte_max;
-		if(_stop && _ground) state = "halte";
+		stop_time = stop_time_max;
+		if(_stop && _ground) state = "stop";
 	break;
 	
-	case "halte":
+	case "stop":
 		hspd = 0;
 		vspd = 0;
-		halte--;
-		if(halte < 1){
+		stop_time--;
+		if(stop_time < 1){
 			state = "idle";
 		}
 	break;

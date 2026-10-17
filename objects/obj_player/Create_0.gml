@@ -1,12 +1,9 @@
-hspd = 0;
-vspd = 0;
-grav = 0.4;
+event_inherited();
+
 state = "idle";
 
-halte_max = 60;
-halte = halte_max;
+stop_time_max = 60;
+stop_time = stop_time_max;
 
-move_spd = 1;
-move_dir = 1;
-vspd_max = 7;
-vspd_min = -7;
+vspd_max = 3;
+vspd_min = -3;
