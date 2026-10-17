@@ -1,9 +1,7 @@
+// Inherit the parent event
 event_inherited();
 
 state = "idle";
 
-stop_time_max = 60;
-stop_time = stop_time_max;
-
-vspd_max = 3;
-vspd_min = -3;
+stop_max = 60;
+stop = stop_max;
