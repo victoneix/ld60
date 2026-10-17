@@ -12,8 +12,17 @@ switch(state){
 		if(place_meeting(x+sign(hspd),y,obj_collision)){
 			move_dir *= -1; 
 		}
-		stop = stop_max;
 		if(_stop && _ground) state = "stop";
+		
+		if(!_ground && vspd > 0){
+			var _enemy = instance_place(x,y+1,obj_enemy);
+			if(_enemy){
+				vspd = 0;
+				vspd = -3;
+				instance_destroy(_enemy.id);
+			}
+		}
+	
 	break;
 	
 	case "stop":
@@ -26,9 +35,14 @@ switch(state){
 			stop = stop_max;
 		}
 		if(stop < 1){
+			stop = stop_max;
 			state = "idle";
 		}
 	break;
+}
+
+if(instance_place(x+hspd,y,obj_enemy)){
+	room_restart();
 }
 
 show_debug_message(state);
