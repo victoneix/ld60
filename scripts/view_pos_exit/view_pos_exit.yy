@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"view_pos_exit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"view_pos_exit",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
