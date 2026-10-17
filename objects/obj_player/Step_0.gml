@@ -45,4 +45,9 @@ if(instance_place(x+hspd,y,obj_enemy)){
 	room_restart();
 }
 
+if(instance_place(x+hspd,y,obj_spike)){
+	room_restart();
+}
+
+
 show_debug_message(state);
